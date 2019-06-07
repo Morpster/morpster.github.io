@@ -1,0 +1,341 @@
+/* ------------  ------------ */
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    height: 90vh;
+    text-align: center;
+}
+
+/* ------------ container ------------ */
+.container {
+    padding: 10px;
+    width: 380px;
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+/* ------------ header ------------ */
+.header {
+    width: 380px;
+    height: 45px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    background-color: #eff1f3;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    color: #000;
+    font-size: 9px;
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------ content ------------ */
+.content {
+    width: 380px;
+    height: 450px;
+    max-height: 450px;
+    background-color: #EFF1F3;
+    overflow: auto;
+    overflow-x: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    width: 92%;
+    min-height: 65px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    cursor: grab;
+    cursor: move;
+    /* In case grab is unsupported */
+    cursor: moz-grab;
+    cursor: -webkit-grab;
+    margin-left: 15px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: -1px 2px 4px -6px #000000;
+}
+
+.item i.co {
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+.item i.co:hover {
+    cursor: pointer;
+}
+
+.item p.text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    left: 50px;
+    top: 3px;
+    max-width: 285px;
+}
+
+.item p.authorText {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    left: 50px;
+    top: 30px;
+    max-width: 285px;
+    opacity: 0.5;
+}
+
+.item p.assignedTo {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    left: 50px;
+    top: 43px;
+    max-width: 285px;
+    opacity: 0.5;
+}
+
+.item i.de {
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 18px;
+    opacity: 0.7;
+}
+
+.item i.de:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+
+.item i.fa-info-circle {
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top: 8px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.item i.fa-info-circle:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+
+/* ------------ add item ------------ */
+.add-to-do {
+    position: relative;
+    width: 380px;
+    height: 60px;
+    background-color: #eff1f3;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.add-to-do i {
+    position: absolute;
+    left: 14px;
+    bottom: 19px;
+    font-size: 25px;
+    color: #4162f6;
+}
+
+.add-to-do input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    top: 10px;
+}
+
+.add-to-do input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #4162f6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #4162f6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #4162f6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+/* ------------ Drag & Drop ------------ */
+.invisible {
+    display: none;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    height: 400px;
+    width: 330px;
+    box-shadow: -1px 5px 12px -3px #000000;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+    background: white;
+    border-radius: 8px;
+    height: 100%;
+}
+
+
+/* Set style for Create event button */
+.form-container .btn {
+    background-color: #5D4954;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 5px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Adding hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.form-container p {
+    font-size: 16px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+}
+
+#subject {
+    margin-left: 14px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#taskDesc {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#taskTitle {
+    padding-bottom: 10px;
+}
+
+#taskMembers {
+    font-size: 12px;
+}
+
+.form-group {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+#memberButton {
+    position: absolute;
+    display: inline-block;
+    padding: 0.25em 0.8em;
+    border: 0.1em solid black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    transition: all 0.4s;
+    opacity: 0.5;
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-weight: 900;
+}
+
+#memberButton:hover {
+    color: white;
+    background: black;
+}
+
+#members {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    max-width: 285px;
+    opacity: 0.5;
+    padding-bottom: 0px;
+}
+
+#dateInput {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+#taskDate {
+    font-size: 12px;
+    opacity: 0.8;
+}

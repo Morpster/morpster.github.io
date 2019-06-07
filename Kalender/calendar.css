@@ -1,0 +1,61 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The popup form, hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+/* Set style for Create event button */
+.form-container .btn {
+  box-shadow: -1px 5px 12px -3px #000000;
+  border-radius: 8px;
+  background-color: #5D4954;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Make cancel button red */
+.form-container .cancel {
+  box-shadow: -1px 5px 12px -3px #000000;
+  border-radius: 8px;
+  background-color: red;
+}
+
+/* Effects when hover buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+#currentPage {
+  text-decoration: underline;
+}

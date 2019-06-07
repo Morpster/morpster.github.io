@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="fjerdingen.css">
+  <link rel="stylesheet" href="..\common.css">
+  <meta charset="utf-8">
+  <title>PLANIFY</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navigation-bar">
+    <div class="logo">
+      <h4>Planify</h4>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../Forside/Forside.html"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="../To-Do-List/prosjekt.html"><i class="fas fa-tasks"></i>Project</a></li>
+      <li><a href="../Kalender/calendar.html"><i class="far fa-calendar-alt"></i>Calendar</a></li>
+      <li><a href="../Fjerdingen/fjerdingen.html"><i class="fas fa-map-marker-alt"></i>Fjerdingen</a></li>
+      <li><a href="../Om oss/omOss.html"><i class="fas fa-address-card"></i>About</a></li>
+      <li><a href="../Innlogging/login.html"><i class="fa fa-fw fa-user"></i>Log in</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <nav id="mySidenav" class="sidenav">
+    <ul class="sidenavLinks">
+      <li><a href="#" class="background"><i class="fas fa-palette"></i>Change background</a></li>
+      <li><a href="#" class="darkMode"><i class="fas fa-moon"></i>Dark mode</a></li>
+      <li><a href="#"><i class="fas fa-plus"></i>Create project</a></li>
+      <li class="newDate"><a href="#"><i class="fas fa-calendar-plus"></i>New event</a></li>
+      <li class ="reset"><a href="#"><i class="fas fa-trash"></i>Reset</a></li>
+    </ul>
+  </nav>
+
+  
+  <script src="..\common.js"></script>
+  <script src="https://kit.fontawesome.com/14cce7d65d.js"></script>
+
+  <div class="mainContainer">
+    <div class="button-box">
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-u1.png', 'U1')">U1</button>
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-1.png', 'F1')">1</button>
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-2.png', 'F2')">2</button>
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-3.png', 'F3')">3</button>
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-4.png', 'F4')">4</button>
+      <button type="button" onclick="changeFloor('pictures/Fjerdingen-5.png', 'F5')">5</button>
+    </div>
+    <div class="map-box">
+      <img src="pictures/Fjerdingen-1.png" class="img1" id="initImage">
+      <div id="floors">
+        <div id="U1">
+          <h2 id="U101">U101</h2>
+          <h2 id="U102">U102</h2>
+          <h2 id="U103">U103</h2>
+          <h2 id="U104">U104</h2>
+          <h2 id="U105">U105</h2>
+          <h2 id="U106">U106</h2>
+        </div>
+        <div id="F1">
+          <h2 id="Forelesningssal">Forelesningssal</h2>
+          <h2 id="Bibliotek">Bibliotek</h2>
+          <h2 id="Kantine">Kantine</h2>
+        </div>
+        <div id="F2">
+          <h2 id="F201">201</h2>
+          <h2 id="F202">202</h2>
+          <h2 id="F203">203</h2>
+          <h2 id="F204">204</h2>
+          <h2 id="F205">205</h2>
+          <h2 id="F206">206</h2>
+        </div>
+        <div id="F3">
+          <h2 id="F301">301</h2>
+          <h2 id="F302">302</h2>
+          <h2 id="F303">303</h2>
+          <h2 id="F304">304</h2>
+          <h2 id="F305">305</h2>
+          <h2 id="F306">306</h2>
+        </div>
+        <div id="F4">
+          <h2 id="F401">401</h2>
+          <h2 id="F402">402</h2>
+          <h2 id="F403">403</h2>
+          <h2 id="F404">404</h2>
+          <h2 id="F405">405</h2>
+          <h2 id="F406">406</h2>
+        </div>
+        <div id="F5">
+          <h2 id="F501">Lesesal</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src='fjerdingen.js'></script>
+</body>
+
+</html>

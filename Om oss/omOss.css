@@ -1,0 +1,27 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    background-image:
+}
+
+#currentPage {
+    text-decoration: underline;
+}
+
+.infoWrapper{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left:0;
+  right:0;
+}
+
+.infoBox{
+  top: 100px;
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+}

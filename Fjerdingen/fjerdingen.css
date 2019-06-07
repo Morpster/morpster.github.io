@@ -1,0 +1,232 @@
+body {
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.map-box:not(h2) {
+  max-width: 855px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1%;
+  position: relative;
+}
+
+.map-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.button-box button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  transition: all 0.4s;
+  opacity: 0.7;
+}
+
+.button-box button:hover {
+  color: white;
+  background: black;
+}
+
+/* ROOM TEXT PLACEMENT */
+
+.map-box h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+#U101 {
+  position: absolute;
+  left: 249px;
+  top: 175px;
+}
+
+#U102 {
+  position: absolute;
+  left: 400px;
+  top: 175px;
+}
+
+#U103 {
+  position: absolute;
+  left: 560px;
+  top: 175px;
+}
+
+#U103 {
+  position: absolute;
+  left: 560px;
+  top: 175px;
+}
+
+#U104 {
+  position: absolute;
+  left: 170px;
+  top: 365px;
+}
+
+#U105 {
+  position: absolute;
+  left: 400px;
+  top: 365px;
+}
+
+#U106 {
+  position: absolute;
+  left: 640px;
+  top: 365px;
+}
+
+#U1,
+#F2,
+#F3,
+#F4,
+#F5 {
+  display: none;
+}
+
+#Forelesningssal {
+  position: absolute;
+  left: 200px;
+  top: 105px;
+}
+
+#Bibliotek {
+  position: absolute;
+  left: 680px;
+  top: 105px;
+}
+
+#Kantine {
+  position: absolute;
+  left: 635px;
+  top: 465px;
+}
+
+#F201 {
+  position: absolute;
+  left: 229px;
+  top: 70px;
+}
+
+#F202 {
+  position: absolute;
+  left: 384px;
+  top: 70px;
+}
+
+#F203 {
+  position: absolute;
+  left: 545px;
+  top: 70px;
+}
+
+#F204 {
+  position: absolute;
+  left: 229px;
+  top: 500px;
+}
+
+#F205 {
+  position: absolute;
+  left: 384px;
+  top: 500px;
+}
+
+#F206 {
+  position: absolute;
+  left: 545px;
+  top: 500px;
+}
+
+#F301 {
+  position: absolute;
+  left: 229px;
+  top: 70px;
+}
+
+#F302 {
+  position: absolute;
+  left: 384px;
+  top: 70px;
+}
+
+#F303 {
+  position: absolute;
+  left: 545px;
+  top: 70px;
+}
+
+#F304 {
+  position: absolute;
+  left: 229px;
+  top: 500px;
+}
+
+#F305 {
+  position: absolute;
+  left: 384px;
+  top: 500px;
+}
+
+#F306 {
+  position: absolute;
+  left: 545px;
+  top: 500px;
+}
+
+#F401 {
+  position: absolute;
+  left: 229px;
+  top: 70px;
+}
+
+#F402 {
+  position: absolute;
+  left: 384px;
+  top: 70px;
+}
+
+#F403 {
+  position: absolute;
+  left: 545px;
+  top: 70px;
+}
+
+#F404 {
+  position: absolute;
+  left: 229px;
+  top: 500px;
+}
+
+#F405 {
+  position: absolute;
+  left: 384px;
+  top: 500px;
+}
+
+#F406 {
+  position: absolute;
+  left: 545px;
+  top: 500px;
+}
+
+#F501 {
+  position: absolute;
+  left: 370px;
+  top: 450px;
+}
